@@ -1,0 +1,17 @@
+  h2 {
+    text-align: center;
+    color:whitesmoke;
+    font-size: 3.0em;
+  }
+  #mnu{
+      text-align: center;
+      color:white;
+  }
+  #myForm {
+    display:none;
+  }
+  body{
+    background-image: url();
+    background-size: cover;
+    background-attachment: fixed;
+}
