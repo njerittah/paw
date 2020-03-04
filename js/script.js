@@ -14,7 +14,7 @@ Dog.prototype.calculatePrice = function(){
     }else if(this.breed === 'Rotweiler'){
         this.price = 70000 ;
     }else if(this.breed === 'German Shepherd'){
-        this.price == 80000 ;
+        this.price = 80000 ;
     }else{
         this.price = 0 ;
     }
@@ -43,7 +43,6 @@ $(document).ready(function(){
     });
 });
 
-<<<<<<< HEAD
 $(document).ready(function(){
 
     $('#guard').click(function(){     // click event for guard dogs
@@ -62,7 +61,6 @@ $(document).ready(function(){
 })
 
 
-=======
 //navigation bar
 
 $(window).on("scroll", function(){
@@ -74,4 +72,3 @@ $(window).on("scroll", function(){
         $('nav').removeClass('black');
     }
 })
->>>>>>> 1f15d83c95f6cba9c8aec5a58900cff0b34141d3
