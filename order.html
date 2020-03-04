@@ -97,50 +97,35 @@
                     <form id="myForm">
                         <div class="form-group">
                             <label for="sel1">Select type:</label>
-                            <select class="form-control" id="type">
-                                <option>Margherita</option>
-                                <option>Deluxe</option>
-                                <option>Peperoni</option>
+                            <select class="form-control" id="breed-1">
+                                <option value = "Bull Dog">Bull Dog</option>
+                                <option value="Belgian Malinois">Belgian Malinois</option>
+                                <option value="Rotweiler">Rotweiler</option>
+                                <option value="German Shepherd">German Shepherd</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="sel1">Select size:</label>
-                            <select class="form-control" id="size">
-                                <option value="1">Large-1200</option>
-                                <option value="2">Medium-800</option>
-                                <option value="3">Small-600</option>
+                            <label for="sel1">Select age:</label>
+                            <select class="form-control" id="age-1">
+                                <option value="Puppy">Puppy</option>
+                                <option value="Adult">Adult</option>
+                               
                             </select>
                         </div>
-                        <div class="form-group">
-                            <label for="sel1">Select crust:</label>
-                            <select class="form-control" id="crusting">
-                                <option value="1">Cripsy-100</option>
-                                <option value="2">Stuffed-120</option>
-                                <option value="3">Glutten-free-200</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="sel1">Select topping:</label>
-                            <select class="form-control" id="top">
-                                <option value="1">Pepperoni-100</option>
-                                <option value="2">Mushrooms-120</option>
-                                <option value="3">Sausage-150</option>
-                                <option value="4">Bacon-200</option>
-                            </select>
-                        </div>
+                        
                         <div class="form-group" required>
                             <label for="sel1">Quantity:</label>
-                            <input type="number" id="quantity" class="form-control" min="1" required>
+                            <input type="number" id="quantity" class="form-control" min="1" placeholder="Number of dogs" required>
                         </div>
                         <div class="form-group" required="">
                             <label for="sel1">Delivery option:</label>
                             <select class="form-control" id="delivery">
-                                <option value="1">No Delivery</option>
+                                <option value="1">No Delivery(Pick-up)</option>
                                 <option value="2">Delivery</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-info btn-block" onclick="submit()">make an order</button>
+                            <button type="submit" class="btn btn-info btn-block" id="guard">make an order</button>
                         </div>
                     </form>
                 </div>
@@ -339,19 +324,19 @@
                 <div class="col-md-4 mx-auto py-2">
                     <form id="myF">
                         <div class="form-group">
-                            <label for="sel1">Select type:</label>
+                            <label for="sel1">Select breed:</label>
                             <select class="form-control" id="type">
-                                <option>Margherita</option>
-                                <option>Deluxe</option>
-                                <option>Peperoni</option>
+                                <option>Bull Dog</option>
+                                <option>Belgian Mallinois</option>
+                                <option>Rotweiler</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="sel1">Select size:</label>
+                            <label for="sel1">Select age:</label>
                             <select class="form-control" id="size">
-                                <option value="1">Large-1200</option>
-                                <option value="2">Medium-800</option>
-                                <option value="3">Small-600</option>
+                                <option value="1">Adult</option>
+                                <option value="2">Puppy</option>
+                                
                             </select>
                         </div>
                         <div class="form-group">
