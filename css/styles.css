@@ -11,7 +11,8 @@
     display:none;
   }
   body{
-    background-image: url();
+    background-image: url('../img/bg/bg.jpeg');
     background-size: cover;
     background-attachment: fixed;
 }
+
