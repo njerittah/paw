@@ -1,0 +1,56 @@
+body{
+  text-align: center;
+  font-family: 'Caladea';
+}
+.name{
+  float: left;
+  width: 45%;
+  padding-top: 40px;
+}
+.email{
+  float: right;
+  width: 45%;
+  padding-top: 40px;
+}
+.phone{
+  float: left;
+  width: 45%;
+}
+.message{
+  align-items: initial;
+}
+#message{
+  height: 100px;
+}
+.icons{
+  padding-top: 70px;
+}
+.button {
+  padding-top: 50px;
+}
+h1{
+  font-family: 'Akronim';
+  padding-top: 20px;
+  text-decoration: underline;
+  font-size: 70px;
+}
+p{
+  font-family: 'Trade Winds';
+  font-size: 25px;
+}
+#contacts{
+  float: left;
+}
+.hidden{
+  display: none;
+}
+.clickable{
+  color: blue;
+}
+.contact{
+  background-image: url(../img2/animal-dog-snow-winter-white-bichon-frise.jpg);
+  font-family: 'Yeon sung';
+}
+.about{
+  background-image: url(../img2/animal-dog-snow-winter-white-bichon-frise.jpg);
+}
