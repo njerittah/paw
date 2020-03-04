@@ -19,6 +19,7 @@ $(document).ready(function(){
     var newUser= new contacts(name, email, number, message)
     details.push(newUser)
     localStorage.setItem('details', newUser.fullContact())
+    alert("We have received your message ,thank you for communicating with us")
     $("#name").val("");
     $("#email").val("");
     $("#number").val("");
