@@ -11,14 +11,10 @@
     display:none;
   }
   body{
-    background-image: url();
-    background-size: cover;
-    background-attachment: fixed;
+      background-image: url(https://bit.ly/2VJEeoU);
+    background-color: black;
 }
-
-
-
-
+/* new section */
 nav {
     /* position: fixed; */
     width: 100%;
@@ -28,6 +24,7 @@ nav {
 
 nav ul{
     float: right;
+    text-align: center;
     margin: 0;
     padding-right: 42px;
 }
