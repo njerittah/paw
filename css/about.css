@@ -58,7 +58,7 @@ nav {
   position: fixed;
   width: 100%;
   line-height: 60px;
-  background: grey, opacity:20%;
+  background: grey; 
 }
 
 nav ul{
