@@ -1,14 +1,23 @@
-body{
-    margin: 0;
+  h2 {
+    text-align: center;
+    color:whitesmoke;
+    font-size: 3.0em;
+  }
+  #mnu{
+      text-align: center;
+      color:white;
+  }
+  #myForm {
+    display:none;
+  }
+  body{
+    background-image: url();
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-#showcase{
-    background: linear-gradient(rgba(0,0,100,0.5));
-    background-image: url('../img/dog.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-}
+
+
 
 nav {
     position: fixed;
@@ -40,17 +49,6 @@ nav ul li a{
     float: left;
     margin: 16px 48px;
 }
-
-#showcase h1{
-    font-size: 48px;
-    letter-spacing: 2px;
-    font-weight: bold;
-    text-align: center;
-    padding-top: 350px;
-    color: blueviolet;
-    font-family: 'Lobster', cursive;
-}
-
 nav.black{
     background: black;
     opacity: 0.60;
