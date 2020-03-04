@@ -53,3 +53,10 @@ nav.black{
     background: black;
     opacity: 0.60;
 }
+.icons{
+    text-align: center;
+    padding-top: 100px;
+}
+.blockquote-footer{
+    text-align: center;
+}
