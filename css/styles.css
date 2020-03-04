@@ -5,7 +5,6 @@ body{
 #showcase{
     background: linear-gradient(rgba(0,0,100,0.5));
     background-image: url('../img/dog.jpg');
-/* >>>>>>> 2d96cdef234ac41aadb59a268a38f7d9c93571cf */
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -15,7 +14,7 @@ nav {
     position: fixed;
     width: 100%;
     line-height: 60px;
-    background: grey, opacity:20%;
+    background: grey;
 }
 
 nav ul{
