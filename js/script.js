@@ -18,3 +18,15 @@ $(document).ready(function(){
         $("#myF").toggle("5000")
     });
 });
+
+//navigation bar
+
+$(window).on("scroll", function(){
+    if($(window).scrollTop()){
+        $('nav').addClass('black');
+    }
+
+    else {
+        $('nav').removeClass('black');
+    }
+})
