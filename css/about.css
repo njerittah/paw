@@ -30,7 +30,7 @@ body{
 }
 h1{
   font-family: 'Akronim';
-  padding-top: 20px;
+  padding-top: 100px;
   text-decoration: underline;
   font-size: 70px;
 }
@@ -53,4 +53,39 @@ p{
 }
 .about{
   background-image: url(../img2/animal-dog-snow-winter-white-bichon-frise.jpg);
+}
+nav {
+  position: fixed;
+  width: 100%;
+  line-height: 60px;
+  background: black; 
+  opacity: 0.6;
+}
+
+nav ul{
+  float: right;
+  margin: 0;
+  padding-right: 42px;
+}
+
+nav ul li{
+  display: inline-block;
+  padding: 16px 32px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: blueviolet;
+  font-size: 30px;
+  font-family: 'Lobster', cursive;
+}
+
+.logo{
+  height: 48px;
+  float: left;
+  margin: 16px 48px;
+}
+nav.black{
+  background: black;
+  opacity: 0.60;
 }
