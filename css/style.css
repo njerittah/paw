@@ -11,16 +11,12 @@
     display:none;
   }
   body{
-    background-image: url();
-    background-size: cover;
-    background-attachment: fixed;
+      background-image: url(https://bit.ly/2VJEeoU);
+    background-color: black;
 }
-
-
-
-
+/* new section */
 nav {
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     line-height: 60px;
     background: grey; 
@@ -30,6 +26,7 @@ nav {
 
 nav ul{
     float: right;
+    text-align: center;
     margin: 0;
     padding-right: 42px;
 }
@@ -54,4 +51,11 @@ nav ul li a{
 nav.black{
     background: black;
     opacity: 0.60;
+}
+.icons{
+    text-align: center;
+    padding-top: 100px;
+}
+.blockquote-footer{
+    text-align: center;
 }

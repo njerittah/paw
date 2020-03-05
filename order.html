@@ -13,7 +13,7 @@
     <title>DOG SEARCH</title>
 </head>
 <body>
-  <header id="showcase">
+    <!-- section 0 -->
     <nav>
         <img class="logo" src="img/logo.png">
         <div class="menu">
@@ -25,7 +25,8 @@
             </ul>
         </div>
     </nav>
-  </header>
+    <br>
+    <br>
 <!-- section 1 -->
   <section>
     <div class="container-fluid">
@@ -35,13 +36,11 @@
                 <div class="card col-lg-3 col-sm-1">
                     <img src="img/grd/1.jpeg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title heads"> Bull Dog</h5>
-                        <p class="card-text graph"> The bulldog is a brawny little powerhouse
-                          whose characteristic crablike waddle exudes great strength,
-                           stability and vigor. It is easy to train and eager to please its owner.
-                           It is also known as the nannt dog due to its care with children
 
-                           <br>
+                        <h5 class="card-title heads"> Rex the Bull Dog</h5>
+                        <p class="card-text graph">Rex the bulldog is a brawny little powerhouse
+                          whose characteristic crablike waddle exudes great strength, stability and vigor.<br>
+
                           <a href="https://www.hillspet.com/dog-care/dog-breeds/english-bulldog">Read more about Rex</a>
                         </p>
                     </div>
@@ -49,12 +48,9 @@
                 <div class="card col-lg-3 col-sm-1">
                     <img src="img/grd/2.jpeg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title heads">Belgian Malinois</h5>
-                      <p class="card-text graph">The Belgian Malinois is an elegant,
-                           well-proportioned, natural, medium-sized, square dog.It is best used as a guard/sniff dog. It is highly energetic
-                           and requires regular exercise and training e.g using tricks.
-                           It can also be used as a guard dog.
-                           <br>
+                        <h5 class="card-title heads">Smith the Belgian Malinois</h5>
+                      <p class="card-text graph">Smith the Belgian Malinois is an elegant,
+                           well-proportioned, natural, medium-sized, square dog.<br>
                           <a href="https://www.hillspet.com/dog-care/dog-breeds/belgian-malinois">Read more on Smith</a>
 
                          </p>
@@ -63,12 +59,12 @@
                 <div class="card col-lg-3 col-sm-1">
                     <img src="img/grd/3.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title heads">Rotweiler</h5>
-                        <p class="card-text graph"> The Rottweiler is  large
-                          and muscular breed that has the potential of exhibiting unshakeable
-                          loyalty towards the owner
-                          It is quite intelligent and dominating which is corrected through
-                          frequent training. It is loyal to its family and works best as a security dog.<br>
+
+                        <h5 class="card-title heads">Jack the Rotweiler</h5>
+                        <p class="card-text graph">Jack the Rottweiler is  large
+                          and muscular breed that has the potential of exhibiting unshakeable loyalty towards the owner
+                          It is quite intelligent and dominating which is corrected through frequent training.<br>
+
                         <a href="https://thehappypuppysite.com/rottweiler-temperament/">Read more about Jack</a>
                         </p>
                     </div>
@@ -76,58 +72,51 @@
                 <div class="card col-lg-3 col-sm-1">
                     <img src="img/grd/4.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title heads">German Shepherd</h5>
-                        <p class="card-text">Rocky is a well-proportioned dog. The head is broad and tapers
-                            handsomely to a sharp muzzle. The ears are rather large and stand erect.
+
+                        <h5 class="card-title heads">Rocky the German Shepherd</h5>
+                        <p class="card-text">Rocky is a well-proportioned dog. The head is broad and tapers handsomely to a sharp muzzle. The ears are rather large and stand erect.
+
                           The coat should be harsh and of medium length.<br>
                            <a href="https://www.hillspet.com/dog-care/dog-breeds/german-shepherd">Read more about Rocky</a>
                          </p>
                     </div>
-                </div>
+                 </div>
             </div>
         </div>
-    </div>-
+    </div>
     <!-- section 1a -->
     <div class="container-fluid">
         <div class="container"  id="mnu">
             <br>
             <br>
-            <button type="button" class="btn btn-outline-info btn-lg" id="checky">PURCHASE/HIRE
+            <button type="button" class="btn btn-outline-info btn-lg" id="checky">PURCHASE
             </button>
             <div class="row">
                 <div class="col-md-4 mx-auto py-2">
                     <form id="myForm">
                         <div class="form-group">
                             <label for="sel1">Select type:</label>
-                            <select class="form-control" id="breed-1">
-                                <option value = "Bull Dog">Bull Dog</option>
-                                <option value="Belgian Malinois">Belgian Malinois</option>
-                                <option value="Rotweiler">Rotweiler</option>
-                                <option value="German Shepherd">German Shepherd</option>
+                            <select class="form-control" id="type">
+                                <option>Bull Dog</option>
+                                <option>Belgian Malinois</option>
+                                <option>Rotweiler</option>
+                                <option>German Shepherd</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="sel1">Select age:</label>
-                            <select class="form-control" id="age-1">
-                                <option value="Puppy">Puppy</option>
-                                <option value="Adult">Adult</option>
 
+                            <label for="sel1">Select size:</label>
+                            <select class="form-control" id="size">
+                                <option value="1">Adult-1200</option>
+                                <option value="2">Puppy-800</option>
                             </select>
                         </div>
-
                         <div class="form-group" required>
                             <label for="sel1">Quantity:</label>
-                            <input type="number" id="quantity" class="form-control" min="1" placeholder="Number of dogs" required>
-                        </div>
-                        <div class="form-group" required="">
-                            <label for="sel1">Delivery option:</label>
-                            <select class="form-control" id="delivery">
-                                <option value="1">No Delivery(Pick-up)</option>
-                                <option value="2">Delivery</option>
-                            </select>
+                            <input type="number" id="quantity" class="form-control" min="1" required>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-info btn-block" id="guard">make an order</button>
+                            <button type="submit" class="btn btn-info btn-block" onclick="submit()">Purchase</button>
                         </div>
                     </form>
                 </div>
@@ -144,8 +133,8 @@
                 <div class="card col-lg-3 col-sm-1">
                     <img src="img/svc/1.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title heads">The Dalmatian</h5>
-                        <p class="card-text graph">The Dalmatian is an active, athletic dog that requires
+                        <h5 class="card-title heads">Sandy The Dalmatian</h5>
+                        <p class="card-text graph">Sandy the Dalmatian is an active, athletic dog that requires
                           a significant amount of physical exercise and mental stimulation.
                             With his strong working background, a Dal
                             who’s left on his own with nothing to do can easily become bored.
@@ -157,9 +146,9 @@
                 <div class="card col-lg-3 col-sm-1">
                     <img src="img/svc/2.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title heads">The Boxer</h5>
+                        <h5 class="card-title heads">Billy the Boxer</h5>
                         <p class="card-text graph">
-                          Boxers are large, muscular, square-headed dogs who look imposing--that is,
+                            Boxers are large, muscular, square-headed dogs who look imposing--that is,
                             until you look into their eyes and see the mischief and joy of life reflected there.
                             Because of their playful nature and boundless energy,
                             they are sometimes called the "Peter Pan" of the dog breeds.<br>
@@ -170,7 +159,7 @@
                 <div class="card col-lg-3 col-sm-1">
                     <img src="img/svc/3.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title heads"> The Poodle</h5>
+                        <h5 class="card-title heads"> Mitchy the Poodle</h5>
                         <p class="card-text graph">These days Poodles can do many different activities.
                           They are good companions and participate in obedience, agility, flyball, dock diving, conformation, canine freestyle, hunting, and tracking.
                            They also make excellent rescue dogs and service dogs.<br>
@@ -181,13 +170,11 @@
                 <div class="card col-lg-3 col-sm-1">
                     <img src="img/svc/4.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title heads"> The Golden Retreiever</h5>
 
-                        <h5 class="card-title heads">Billy the Boxer</h5>
-                        <p class="card-text"></p>
+                        <h5 class="card-title heads">Sally the Golden Retriever</h5>
 
-                        <h5 class="card-title heads">Sally the Golden Retreiever</h5>
-                        <p class="card-text"
+                        <p class="card-text">
+
                             Sally the golden Retrievers are obedient, playful, and intelligent.
                             In addition, they have a well-mannered temperament, making them great family pets.
                             hey are extremely active and are always happy to go on a walk. This breed tends to mature slowly
@@ -206,7 +193,7 @@
         <div class="container"  id="mnu">
             <br>
             <br>
-            <button type="button" class="btn btn-outline-info btn-lg" id="check">PURCHASE/HIRE
+            <button type="button" class="btn btn-outline-info btn-lg" id="check">PURCHASE
             </button>
             <div class="row">
                 <div class="col-md-4 mx-auto py-2">
@@ -214,58 +201,34 @@
                         <div class="form-group">
                             <label for="sel1">Select type:</label>
                             <select class="form-control" id="type">
-                                <option>Margherita</option>
-                                <option>Deluxe</option>
-                                <option>Peperoni</option>
+                                <option>Dalmatian</option>
+                                <option>Boxer</option>
+                                <option>Poodle</option>
+                                <option>Golden Retriever</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="sel1">Select size:</label>
                             <select class="form-control" id="size">
-                                <option value="1">Large-1200</option>
-                                <option value="2">Medium-800</option>
-                                <option value="3">Small-600</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="sel1">Select crust:</label>
-                            <select class="form-control" id="crusting">
-                                <option value="1">Cripsy-100</option>
-                                <option value="2">Stuffed-120</option>
-                                <option value="3">Glutten-free-200</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="sel1">Select topping:</label>
-                            <select class="form-control" id="top">
-                                <option value="1">Pepperoni-100</option>
-                                <option value="2">Mushrooms-120</option>
-                                <option value="3">Sausage-150</option>
-                                <option value="4">Bacon-200</option>
+                                <option value="1">Adult-1200</option>
+                                <option value="2">Puppy-800</option>
                             </select>
                         </div>
                         <div class="form-group" required>
                             <label for="sel1">Quantity:</label>
                             <input type="number" id="quantity" class="form-control" min="1" required>
                         </div>
-                        <div class="form-group" required="">
-                            <label for="sel1">Delivery option:</label>
-                            <select class="form-control" id="delivery">
-                                <option value="1">No Delivery</option>
-                                <option value="2">Delivery</option>
-                            </select>
-                        </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-info btn-block" onclick="submit()">make an order</button>
+                            <button type="submit" class="btn btn-info btn-block" onclick="submit()">Purchase</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-  </section>
-    <!-- section 4 -->
-  <section>
+
+    <!-- section 3 -->
+
     <div class="container-fluid">
         <div class="container" id="menu">
             <h2 class="p-5">SNIFF DOGS</h2>
@@ -274,14 +237,12 @@
                     <img src="img/sniff/1.jpeg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
 
-                        <h5 class="card-title heads"></h5>
-                        <p class="card-text graph"></p>
+                        <p class="card-t
 
                         <h5 class="card-title heads">Klein</h5>
                         <p class="card-text graph">The temperament of Poodles is often described as alert,
                              intelligent, loyal, trainable, active, and instinctual. They are very smart dogs
                              and can learn commands and tricks very quickly.
-
                             Poodles are known to be quite loyal and typically bond quickly with family members.
                             They tend to be shy around strangers
                             and rarely act in an aggressive manner, apart from some sporadic barking. <br>
@@ -292,12 +253,10 @@
                 <div class="card col-lg-3 col-sm-1">
                     <img src="img/sniff/2.jpeg" class="card-img-top img-fluid" width="200" height="100"alt="...">
                     <div class="card-body">
-                        <h5 class="card-title heads"></h5>
-                        <p class="card-text graph"></p>
+
                         <h5 class="card-title heads"> Jim the Japanese Splitz</h5>
                         <p class="card-text graph">The silly and playful Japanese Spitz temperament makes this dog an
                             increasingly popular pet.
-
                             The Japanese Spitz is a relatively uncommon breed in America at this time,
                             but it is gaining more attention. <br>
                             <a href="https://www.dogtemperament.com/japanese-spitz-temperament/"></a>
@@ -307,8 +266,7 @@
                 <div class="card col-lg-3 col-sm-1">
                     <img src="img/sniff/3.jpeg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title heads"></h5>
-                        <p class="card-text graph"></p>
+
                         <h5 class="card-title heads">Doe the pugdog</h5>
                         <p class="card-text graph">
                             ugs often are described as a lot of dog in a small space.
@@ -316,16 +274,14 @@
                             and are known as the clowns of the canine world because they have a great sense of humor
                             and like to show off.
                              Originally bred to be a lap dog, the Pug thrives on human companionship.
-
                            <a href="https://dogtime.com/dog-breeds/pug">Read more about Doe</a>
                         </p>
                     </div>
                 </div>
                 <div class="card col-lg-3 col-sm-1">
                     <img src="img/sniff/4.jpeg" class="card-img-top img-fluid" alt="...">
+
                     <div class="card-body">
-                        <h5 class="card-title heads"></h5>
-                        <p class="card-text"></p>
 
                         <h5 class="card-title heads">Lucky the Labrador Retreiver</h5>
                         <p class="card-text">riendly. They are companionable housemates who bond with the whole family,
@@ -339,69 +295,60 @@
             </div>
         </div>
     </div>
-  </section>
-    <!-- section 4a -->
-  <section>
+
+    <!-- section 3a -->
     <div class="container-fluid">
         <div class="container"  id="mnu">
             <br>
             <br>
-            <button type="button" class="btn btn-outline-info btn-lg" id="che">PURCHASE/HIRE
+            <button type="button" class="btn btn-outline-info btn-lg" id="che">PURCHASE
             </button>
             <div class="row">
                 <div class="col-md-4 mx-auto py-2">
                     <form id="myF">
                         <div class="form-group">
-                            <label for="sel1">Select breed:</label>
+                            <label for="sel1">Select type:</label>
                             <select class="form-control" id="type">
-                                <option>Bull Dog</option>
-                                <option>Belgian Mallinois</option>
-                                <option>Rotweiler</option>
+                                <option>Klein</option>
+                                <option>Japanese Splitz</option>
+                                <option>Pugdog</option>
+                                <option>Labrador Retreiver</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="sel1">Select age:</label>
+                            <label for="sel1">Select size:</label>
                             <select class="form-control" id="size">
-                                <option value="1">Adult</option>
-                                <option value="2">Puppy</option>
 
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="sel1">Select crust:</label>
-                            <select class="form-control" id="crusting">
-                                <option value="1">Cripsy-100</option>
-                                <option value="2">Stuffed-120</option>
-                                <option value="3">Glutten-free-200</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="sel1">Select topping:</label>
-                            <select class="form-control" id="top">
-                                <option value="1">Pepperoni-100</option>
-                                <option value="2">Mushrooms-120</option>
-                                <option value="3">Sausage-150</option>
-                                <option value="4">Bacon-200</option>
+                                <option value="1">Adult-1200</option>
+                                <option value="2">Puppy-800</option>
                             </select>
                         </div>
                         <div class="form-group" required>
                             <label for="sel1">Quantity:</label>
                             <input type="number" id="quantity" class="form-control" min="1" required>
                         </div>
-                        <div class="form-group" required="">
-                            <label for="sel1">Delivery option:</label>
-                            <select class="form-control" id="delivery">
-                                <option value="1">No Delivery</option>
-                                <option value="2">Delivery</option>
-                            </select>
-                        </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-info btn-block" onclick="submit()">make an order</button>
+                            <button type="submit" class="btn btn-info btn-block" onclick="submit()">Purchase</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
+        <div class="icons">
+            <img src="img2/twitter.png"> 
+            <img src="img2/facebook.png">
+            <img src="img2/behance.png">
+            <img src="img2/g_plus.png">
+            <img src="img2/skype.png">
+            <img src="img2/you_tube.png">
+            <img src="img2/dribble.png">
+            <img src="img2/flickr.png">
+            <img src="img2/pinterest.png">
+          </div>
+          <div class="blockquote-footer">
+            <p>PAWSome<br />
+            2020</p> 
+          </div>
     </div>
   </section>
 </body>
