@@ -5,8 +5,7 @@ function Dog(breed, age, mode) {
     this.mode = mode;
 }
 
-//Function that calculates price of the Dog
-
+//Function that calculates price of the Dog based on the age and breed
 
 Dog.prototype.calculatePrice = function () {
 
@@ -73,53 +72,186 @@ Dog.prototype.calculatePrice = function () {
 
     }
 
+
+
     return this.price;
 
 
 }
-$(document).ready(function(){
-    $("#checky").click(function(){
+
+//Function that calculates the delivery fee
+
+Dog.prototype.calculateDelivery = function () {
+    if (this.mode === 'Delivery') {
+        this.deliveryFee = 1000;
+    } else if (this.mode === 'No Delivery') {
+        this.deliveryFee = 0;
+    }
+    return this.deliveryFee;
+}
+
+    return this.price;
+
+
+//Some javascript effects
+
+$(document).ready(function () {
+    $("#checky").click(function () {
         $("#myForm").toggle("5000")
     });
 });
-$(document).ready(function(){
-    $("#check").click(function(){
+$(document).ready(function () {
+    $("#check").click(function () {
         $("#myFrm").toggle("5000")
     });
 });
-$(document).ready(function(){
-    $("#chec").click(function(){
+$(document).ready(function () {
+    $("#chec").click(function () {
         $("#myFm").toggle("5000")
     });
 });
-$(document).ready(function(){
-    $("#che").click(function(){
+$(document).ready(function () {
+    $("#che").click(function () {
         $("#myF").toggle("5000")
     });
 });
 
-$(document).ready(function(){
 
-    $('#guard').click(function(){     // click event for guard dogs
-        var dogBreed =  $('#breed-1 option:selected').val();
-        var dogAge   =  $('#age-1 option:selected').val();
+$(document).ready(function () {
 
-        var newDog = new Dog(dogBreed,dogAge);
-        dogPrice = newDog.calculatePrice();
-        alert('The Breed of the Dog is ' + newDog.breed + ' the Age is ' + newDog.age + ' and the price is ' + newDog.price);
+
+    $(':button').click(function (event) {
+
+        if (this.id === 'guard') {                     //To purchase a guard dog
+
+            $('#service').prop('disabled', true);
+            $('#sniff').prop('disabled', true);
+
+            var dogBreed = $('#breed-1 option:selected').val();
+            var dogAge = $('#age-1 option:selected').val();
+            var delivered = $('#delivery-1 option:selected').val();
+            var quantity = parseInt($('#quantity-1').val());
+
+            var newDog = new Dog(dogBreed, dogAge, delivered);
+            dogPrice = newDog.calculatePrice();
+            dogDeliveryFee = newDog.calculateDelivery();
+
+
+
+
+            $('.output').show();
+            $('.dog-breed').text(newDog.breed);
+            $('.dog-age').text(newDog.age);
+            $('.dog-quantity').text(quantity);
+            $('.dog-price').text(newDog.price);
+            $('.dog-delivery').text(newDog.deliveryFee);
+            $('.dog-total').text((quantity * newDog.price) + newDog.deliveryFee);
+
+
+
+        } else if (this.id === 'service') {                        //To purchase a service dog
+            $('#guard').prop('disabled', true);
+            $('#sniff').prop('disabled', true);
+
+
+            var dogBreed = $('#breed-2 option:selected').val();
+            var dogAge = $('#age-2 option:selected').val();
+            var delivered = $('#delivery-2 option:selected').val();
+            var quantity = parseInt($('#quantity-2').val());
+
+            var newDog = new Dog(dogBreed, dogAge, delivered);
+            dogPrice = newDog.calculatePrice();
+            dogDeliveryFee = newDog.calculateDelivery();
+
+
+            $('.output').show();
+            $('.dog-breed').text(newDog.breed);
+            $('.dog-age').text(newDog.age);
+            $('.dog-quantity').text(quantity);
+            $('.dog-price').text(newDog.price);
+            $('.dog-delivery').text(newDog.deliveryFee);
+            $('.dog-total').text((quantity * newDog.price) + newDog.deliveryFee);
+
+
+
+        } else if (this.id === 'sniff') {                      //To purchase a sniff dog
+            $('#guard').prop('disabled', true);
+            $('#service').prop('disabled', true);
+
+
+
+            var dogBreed = $('#breed-3 option:selected').val();
+            var dogAge = $('#age-3 option:selected').val();
+            var delivered = $('#delivery-3 option:selected').val();
+            var quantity = parseInt($('#quantity-3').val());
+
+            var newDog = new Dog(dogBreed, dogAge, delivered);
+            dogPrice = newDog.calculatePrice();
+            dogDeliveryFee = newDog.calculateDelivery();
+
+            if (newDog.mode === 'No Delivery') {
+                $('.output').show();
+                $('.dog-breed').text(newDog.breed);
+                $('.dog-age').text(newDog.age);
+                $('.dog-quantity').text(quantity);
+                $('.dog-price').text(newDog.price);
+                $('.dog-delivery').text(newDog.deliveryFee);
+                $('.dog-total').text((quantity * newDog.price) + newDog.deliveryFee);
+
+            } else {
+                $('.output').show();
+                $('.dog-breed').text(newDog.breed);
+                $('.dog-age').text(newDog.age);
+                $('.dog-quantity').text(quantity);
+                $('.dog-price').text(newDog.price);
+                $('.dog-delivery').text(newDog.deliveryFee);
+                $('.dog-total').text((quantity * newDog.price) + newDog.deliveryFee);
+
+                $("#address-3").append('<div class="new-address bg-success">' +
+                    '<div class="form-group">' +
+                    '<label for="new-street">Name</label>' +
+                    '<input type="text" placeholder="Enter Name.." class="form-control new-street">' +
+                    '</div>' +
+                    '<div class="form-group">' +
+                    '<label for="phone-no">Phone number</label>' +
+                    '<input type="number" placeholder="Enter phone number.." class="form-control new-city">' +
+                    '</div>' +
+                    '<div class="form-group">' +
+                    '<label for="street-name">Street name</label>' +
+                    '<input type="text"  placeholder="Enter street name.." class="form-control new-county">' +
+                    '</div>' +
+                    '<div class="form-group">' +
+                    '<label for="county">county/city</label>' +
+                    '<input type="text"  placeholder="Enter county/city name..." class="form-control new-county">' +
+                    '</div>' +
+                    '</div>' +
+                    '<button type="submit" class="btn btn-info btn-block" id="confirm-3">Confirm</button><br><br></br>'
+
+                );
+
+
+
+            }
+
+
+
+
+
+
+        }
+
+        event.preventDefault();
 
 
     })
-
-
 
 })
 
 
 //navigation bar
 
-$(window).on("scroll", function(){
-    if($(window).scrollTop()){
+$(window).on("scroll", function () {
+    if ($(window).scrollTop()) {
         $('nav').addClass('black');
     }
  

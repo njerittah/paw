@@ -19,9 +19,9 @@
         <div class="menu">
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="order.html">Order</a></li>
                 <li><a href="about.html">About us</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="order.html">Order</a></li>
             </ul>
         </div>
     </nav>
@@ -113,11 +113,21 @@
                         </div>
                         <div class="form-group" required>
                             <label for="sel1">Quantity:</label>
-                            <input type="number" id="quantity" class="form-control" min="1" required>
+
+                            <input type="number" id="quantity-1" class="form-control" min="1" placeholder="Number of dogs" value="1" required>
                         </div>
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-info btn-block" onclick="submit()">Purchase</button>
+                        <div class="form-group" required="">
+                            <label for="sel1">Delivery option:</label>
+                            <select class="form-control" id="delivery-1">
+                                <option value="No Delivery">No Delivery(Pick-up)</option>
+                                <option value="Delivery">Delivery</option>
+                            </select>
                         </div>
+                        <div class="form-group address-1">
+                            <button type="submit" class="btn btn-info btn-block" id="guard">make an order</button>
+
+                        </div>
+                      
                     </form>
                 </div>
             </div>
@@ -172,7 +182,10 @@
                     <img src="img/svc/4.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
 
-                        <h5 class="card-title heads">Sally the Golden Retriever</h5>
+
+                        <h5 class="card-title heads"> The Golden Retreiever</h5>
+
+                        
 
                         <p class="card-text">
 
@@ -182,6 +195,7 @@
                             and maintains a silly puppy personality for many years after they’re grown. <br>
                             <a href="https://canna-pet.com/breed/golden-retriever/">Read more about Sally</a>
                         </p>
+
                     </div>
                 </div>
             </div>
@@ -201,34 +215,52 @@
                     <form id="myFrm">
                         <div class="form-group">
                             <label for="sel1">Select type:</label>
+                            <select class="form-control" id="breed-2">
+                                <option value = "The Dalmatian">The Dalmatian</option>
+                                <option value="The Boxer">The Boxer</option>
+                                <option value="The Poodle">The Poodle</option>
+                                <option value="The Golden Retriever">The Golden Retriever</option>
+
                             <select class="form-control" id="type">
                                 <option>Dalmatian</option>
                                 <option>Boxer</option>
                                 <option>Poodle</option>
                                 <option>Golden Retriever</option>
+
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="sel1">Select size:</label>
-                            <select class="form-control" id="size">
-                                <option value="1">Adult-1200</option>
-                                <option value="2">Puppy-800</option>
-                            </select>
+
+                            <select class="form-control" id="age-2">
+                                <option value="Puppy">Puppy</option>
+                                <option value="Adult">Adult</option>
+                               
+
+                            
                         </div>
+                       
                         <div class="form-group" required>
                             <label for="sel1">Quantity:</label>
-                            <input type="number" id="quantity" class="form-control" min="1" required>
+                            <input type="number" id="quantity-2" class="form-control" min="1" placeholder="Number of dogs" value="1" required>
+                        </div>
+
+                        <div class="form-group" required="">
+                            <label for="sel1">Delivery option:</label>
+                            <select class="form-control" id="delivery-2">
+                                <option value="No Delivery">No Delivery(Pick-up)</option>
+                                <option value="Delivery">Delivery</option>
+                            </select>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-info btn-block" onclick="submit()">Purchase</button>
+                            <button type="submit" class="btn btn-info btn-block" id="service">make an order</button>
+
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- section 3 -->
 
     <div class="container-fluid">
         <div class="container" id="menu">
@@ -237,8 +269,7 @@
                 <div class="card col-lg-3 col-sm-1">
                     <img src="img/sniff/1.jpeg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
-
-                        <h5 class="card-title heads">Klein</h5>
+    <h5 class="card-title heads">Klein</h5>
                         <p class="card-text graph">The temperament of Poodles is often described as alert,
                              intelligent, loyal, trainable, active, and instinctual. They are very smart dogs
                              and can learn commands and tricks very quickly.
@@ -279,7 +310,6 @@
                 </div>
                 <div class="card col-lg-3 col-sm-1">
                     <img src="img/sniff/4.jpeg" class="card-img-top img-fluid" alt="...">
-
                     <div class="card-body">
 
                         <h5 class="card-title heads">Lucky the Labrador Retreiver</h5>
@@ -306,29 +336,41 @@
                 <div class="col-md-4 mx-auto py-2">
                     <form id="myF">
                         <div class="form-group">
-                            <label for="sel1">Select type:</label>
-                            <select class="form-control" id="type">
-                                <option>Klein</option>
-                                <option>Japanese Splitz</option>
-                                <option>Pugdog</option>
-                                <option>Labrador Retreiver</option>
+1
+                            <label for="sel1">Select breed:</label>
+                            <select class="form-control" id="breed-3">
+                                <option value = "Klein">Klein</option>
+                                <option value="Japanese Splitz">Japanese Splitz</option>
+                                <option value="pugdog">pugdog</option>
+                                <option value="Labrador Retriever">Labrador Retriever</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="sel1">Select size:</label>
-                            <select class="form-control" id="size">
-
-                                <option value="1">Adult-1200</option>
-                                <option value="2">Puppy-800</option>
+                            <label for="sel1">Select age:</label>
+                            <select class="form-control" id="age-3">
+                                <option value="Adult">Adult</option>
+                                <option value="Puppy">Puppy</option>
+                                
                             </select>
                         </div>
+                      
+
                         <div class="form-group" required>
                             <label for="sel1">Quantity:</label>
-                            <input type="number" id="quantity" class="form-control" min="1" required>
+                            <input type="number" id="quantity-3" class="form-control" min="1" value="1" required>
                         </div>
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-info btn-block" onclick="submit()">Purchase</button>
+
+                        <div class="form-group" required="">
+                            <label for="sel1">Delivery option:</label>
+                            <select class="form-control" id="delivery-3">
+                                <option value="No Delivery">No Delivery</option>
+                                <option value="Delivery">Delivery</option>
+                            </select>
                         </div>
+                        <div class="form-group" id="address-3">
+                            <button type="submit" class="btn btn-info btn-block" id="sniff">make an order</button><br><br>
+
+                        
                     </form>
                 </div>
             </div>
@@ -349,6 +391,18 @@
             2020</p> 
           </div>
     </div>
+
+    <div class="output text-center" style="display: none;" > 
+        <div id="output">
+            <p><b>Breed: </b> <span class="dog-breed"></span></p>
+            <p><b>Age:</b> <span class="dog-age"></span></p>
+            <p><b>Quantity:</b> <span class="dog-quantity"></span></p>
+            <p><b>Price:</b> <span class="dog-price"></span></p>
+            <p><b>Delivery charge:</b> <span class="dog-delivery"></span></p>
+            <p><b>Total:</b> <span class="dog-total"></span></p><br>
+        </div>
+    </div>
   </section>
+
 </body>
 </html>
