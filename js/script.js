@@ -39,7 +39,7 @@ Dog.prototype.calculatePrice = function () {
             break;
 
         case 'Puppy':
-        case 'Adult':
+        
             if (this.breed === 'Bull Dog') {
                 this.price = 25000;
             } else if (this.breed === 'Belgian Malinois') {
@@ -71,6 +71,8 @@ Dog.prototype.calculatePrice = function () {
 
 
     }
+
+
 
     return this.price;
 
@@ -113,11 +115,9 @@ $(document).ready(function () {
     });
 });
 
-<<<<<<< HEAD
+
 $(document).ready(function () {
-=======
-$(document).ready(function(){
->>>>>>> ab1640e0ee1d873c9d7688640dc375eb43e0a594
+
 
     $(':button').click(function (event) {
 
@@ -247,57 +247,6 @@ $(document).ready(function(){
 })
 
 
-<<<<<<< HEAD
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
->>>>>>> ab1640e0ee1d873c9d7688640dc375eb43e0a594
 //navigation bar
 
 $(window).on("scroll", function () {
@@ -308,8 +257,3 @@ $(window).on("scroll", function () {
     else {
         $('nav').removeClass('black');
     }
-<<<<<<< HEAD
-})
-=======
-})
->>>>>>> ab1640e0ee1d873c9d7688640dc375eb43e0a594
