@@ -19,7 +19,7 @@ Dog.prototype.calculatePrice = function(){
         this.price = 0 ;
     }
     return this.price ;
-} 
+}
 
 
 $(document).ready(function(){
