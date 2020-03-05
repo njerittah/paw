@@ -113,7 +113,11 @@ $(document).ready(function () {
     });
 });
 
+<<<<<<< HEAD
 $(document).ready(function () {
+=======
+$(document).ready(function(){
+>>>>>>> ab1640e0ee1d873c9d7688640dc375eb43e0a594
 
     $(':button').click(function (event) {
 
@@ -243,6 +247,7 @@ $(document).ready(function () {
 })
 
 
+<<<<<<< HEAD
 
 
 
@@ -291,14 +296,20 @@ $(document).ready(function () {
 
 
 
+=======
+>>>>>>> ab1640e0ee1d873c9d7688640dc375eb43e0a594
 //navigation bar
 
 $(window).on("scroll", function () {
     if ($(window).scrollTop()) {
         $('nav').addClass('black');
     }
-
+ 
     else {
         $('nav').removeClass('black');
     }
+<<<<<<< HEAD
 })
+=======
+})
+>>>>>>> ab1640e0ee1d873c9d7688640dc375eb43e0a594
