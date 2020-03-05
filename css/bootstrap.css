@@ -579,10 +579,7 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-<<<<<<< HEAD
-=======
   color:#82E0AA;
->>>>>>> 2d96cdef234ac41aadb59a268a38f7d9c93571cf
 }
 
 @media (min-width: 576px) {
@@ -5247,14 +5244,9 @@ a.badge-dark:focus, a.badge-dark.focus {
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
-<<<<<<< HEAD
-  background-color: #e9ecef;
-  border-radius: 0.3rem;
-=======
   opacity: 70%;
   border-radius: 0.3rem;
   background-color: rgb(182, 105, 34);
->>>>>>> 2d96cdef234ac41aadb59a268a38f7d9c93571cf
 }
 
 @media (min-width: 576px) {

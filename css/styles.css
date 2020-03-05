@@ -14,7 +14,7 @@ nav {
     position: fixed;
     width: 100%;
     line-height: 60px;
-    background: grey;
+    background: grey, opacity:20%;
 }
 
 nav ul{
@@ -55,4 +55,3 @@ nav.black{
     background: black;
     opacity: 0.60;
 }
-

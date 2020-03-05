@@ -58,8 +58,7 @@ nav {
   position: fixed;
   width: 100%;
   line-height: 60px;
-  background: black; 
-  opacity: 0.6;
+  background: grey, opacity:20%;
 }
 
 nav ul{
