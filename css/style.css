@@ -19,7 +19,9 @@ nav {
     /* position: fixed; */
     width: 100%;
     line-height: 60px;
-    background: grey;
+    background: grey; 
+    opacity:20%;
+    z-index: 1;
 }
 
 nav ul{
