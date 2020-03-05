@@ -11,15 +11,15 @@
     display:none;
   }
   body{
-      background-image: url(https://bit.ly/2VJEeoU);
-    background-color: black;
+    background-image: url(https://bit.ly/2VJEeoU);
+    /* background-color: black; */
 }
 /* new section */
 nav {
-    /* position: fixed; */
+    position: fixed;
     width: 100%;
-    line-height: 60px;
-    background: grey; 
+    line-height: 50px;
+    background:whitesmoke; 
     opacity:20%;
     z-index: 1;
 }
@@ -50,7 +50,7 @@ nav ul li a{
 }
 nav.black{
     background: black;
-    opacity: 0.60;
+    opacity: 1.0;
 }
 .icons{
     text-align: center;
