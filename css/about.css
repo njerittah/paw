@@ -58,7 +58,7 @@ nav {
   position: fixed;
   width: 100%;
   line-height: 60px;
-  background: grey;
+  background: rgba(255, 255, 255, 0)
 }
 
 nav ul{

@@ -96,19 +96,19 @@
                     <form id="myForm">
                         <div class="form-group">
                             <label for="sel1">Select type:</label>
-                            <select class="form-control" id="type">
-                                <option>Bull Dog</option>
-                                <option>Belgian Malinois</option>
-                                <option>Rotweiler</option>
-                                <option>German Shepherd</option>
+                            <select class="form-control" id="breed-1">
+                                <option value="Bull Dog">Bull Dog</option>
+                                <option value="Belgian Malinois">Belgian Malinois</option>
+                                <option value="Rotweiler">Rotweiler</option>
+                                <option value="German Shepherd">German Shepherd</option>
                             </select>
                         </div>
                         <div class="form-group">
 
                             <label for="sel1">Select size:</label>
-                            <select class="form-control" id="size">
-                                <option value="1">Adult-1200</option>
-                                <option value="2">Puppy-800</option>
+                            <select class="form-control" id="age-1">
+                                <option value="Adult">Adult</option>
+                                <option value="Value">Puppy</option>
                             </select>
                         </div>
                         <div class="form-group" required>
@@ -123,13 +123,32 @@
                                 <option value="Delivery">Delivery</option>
                             </select>
                         </div>
-                        <div class="form-group address-1">
+                        <div class="form-group " id="address-1">
                             <button type="submit" class="btn btn-info btn-block" id="guard">make an order</button>
 
                         </div>
                       
                     </form>
                 </div>
+            </div>
+        </div>
+        <div class="out-1" style="color: black ;">
+            <div id="out-1" style="height: 10vh;">
+              <h2 style="color: blue; font-style: italic;">Order:</h2>
+              <ul id="orders-1">
+  
+              </ul>
+           </div><br><br>
+
+        </div>
+        <div class="output-1 text-center" style="display: none; color: black;" > 
+            <div id="output-1">
+                <p><b>Breed: </b> <span class="dog-breed"></span></p>
+                <p><b>Age:</b> <span class="dog-age"></span></p>
+                <p><b>Quantity:</b> <span class="dog-quantity"></span></p>
+                <p><b>Price:</b> <span class="dog-price"></span></p>
+                <p><b>Delivery charge:</b> <span class="dog-delivery"></span></p>
+                <p><b>Total:</b> <span class="dog-total"></span></p><br>
             </div>
         </div>
     </div>
@@ -212,7 +231,7 @@
             </button>
             <div class="row">
                 <div class="col-md-4 mx-auto py-2">
-                    <form id="myFrm">
+                    <form id="myFrm" style="display: none;">
                         <div class="form-group">
                             <label for="sel1">Select type:</label>
                             <select class="form-control" id="breed-2">
@@ -220,12 +239,6 @@
                                 <option value="The Boxer">The Boxer</option>
                                 <option value="The Poodle">The Poodle</option>
                                 <option value="The Golden Retriever">The Golden Retriever</option>
-
-                            <select class="form-control" id="type">
-                                <option>Dalmatian</option>
-                                <option>Boxer</option>
-                                <option>Poodle</option>
-                                <option>Golden Retriever</option>
 
                             </select>
                         </div>
@@ -235,9 +248,7 @@
                             <select class="form-control" id="age-2">
                                 <option value="Puppy">Puppy</option>
                                 <option value="Adult">Adult</option>
-                               
-
-                            
+                            </select>   
                         </div>
                        
                         <div class="form-group" required>
@@ -245,19 +256,36 @@
                             <input type="number" id="quantity-2" class="form-control" min="1" placeholder="Number of dogs" value="1" required>
                         </div>
 
-                        <div class="form-group" required="">
+                        <div class="form-group" required>
                             <label for="sel1">Delivery option:</label>
                             <select class="form-control" id="delivery-2">
                                 <option value="No Delivery">No Delivery(Pick-up)</option>
                                 <option value="Delivery">Delivery</option>
                             </select>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" id="address-2">
                             <button type="submit" class="btn btn-info btn-block" id="service">make an order</button>
 
                         </div>
                     </form>
                 </div>
+            </div> 
+        </div>
+        <div class="out-3" style="color: black;">
+            <div id="out-3" style="height: 10vh;">
+              <h2 style="color: blue; font-style: italic;">Order:</h2>
+              <ul id="orders-2">
+  
+              </ul>
+           </div><br><br>
+        <div class="output-2 text-center" style="color: black; display: none;" > 
+            <div id="output-2">
+                <p><b>Breed: </b> <span class="dog-breed"></span></p>
+                <p><b>Age:</b> <span class="dog-age"></span></p>
+                <p><b>Quantity:</b> <span class="dog-quantity"></span></p>
+                <p><b>Price:</b> <span class="dog-price"></span></p>
+                <p><b>Delivery charge:</b> <span class="dog-delivery"></span></p>
+                <p><b>Total:</b> <span class="dog-total"></span></p><br>
             </div>
         </div>
     </div>
@@ -334,12 +362,12 @@
             </button>
             <div class="row">
                 <div class="col-md-4 mx-auto py-2">
-                    <form id="myF">
+                    <form id="myF" style="display: none;">
                         <div class="form-group">
 1
                             <label for="sel1">Select breed:</label>
                             <select class="form-control" id="breed-3">
-                                <option value = "Klein">Klein</option>
+                                <option value ="Klein">Klein</option>
                                 <option value="Japanese Splitz">Japanese Splitz</option>
                                 <option value="pugdog">pugdog</option>
                                 <option value="Labrador Retriever">Labrador Retriever</option>
@@ -375,6 +403,23 @@
                 </div>
             </div>
         </div>
+        <div class="out-3" style="color: black;">
+          <div id="out-3" style="height: 10vh;">
+            <h2 style="color: blue; font-style: italic;">Order:</h2>
+            <ul id="orders-3">
+
+            </ul>
+         </div><br><br>
+        <div class="output-3 text-center" style="display: none; color: black;" > 
+            <div id="output-3">
+                <p><b>Breed: </b> <span class="dog-breed"></span></p>
+                <p><b>Age:</b> <span class="dog-age"></span></p>
+                <p><b>Quantity:</b> <span class="dog-quantity"></span></p>
+                <p><b>Price:</b> <span class="dog-price"></span></p>
+                <p><b>Delivery charge:</b> <span class="dog-delivery"></span></p>
+                <p><b>Total:</b> <span class="dog-total"></span></p><br>
+            </div>
+        </div>
         <div class="icons">
             <img src="img2/twitter.png"> 
             <img src="img2/facebook.png">
@@ -392,16 +437,7 @@
           </div>
     </div>
 
-    <div class="output text-center" style="display: none;" > 
-        <div id="output">
-            <p><b>Breed: </b> <span class="dog-breed"></span></p>
-            <p><b>Age:</b> <span class="dog-age"></span></p>
-            <p><b>Quantity:</b> <span class="dog-quantity"></span></p>
-            <p><b>Price:</b> <span class="dog-price"></span></p>
-            <p><b>Delivery charge:</b> <span class="dog-delivery"></span></p>
-            <p><b>Total:</b> <span class="dog-total"></span></p><br>
-        </div>
-    </div>
+   
   </section>
 
 </body>

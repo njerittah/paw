@@ -11,7 +11,7 @@
     display:none;
   }
   body{
-    background-image: url(https://bit.ly/2VJEeoU);
+    background-image: url(https://bit.ly/2vwGPrB);
     /* background-color: black; */
 }
 /* new section */
@@ -19,8 +19,7 @@ nav {
     position: fixed;
     width: 100%;
     line-height: 50px;
-    background:whitesmoke; 
-    opacity:20%;
+    background:rgba(255, 255, 255, 0) ;
     z-index: 1;
 }
 
@@ -59,3 +58,7 @@ nav.black{
 .blockquote-footer{
     text-align: center;
 }
+.myOrder {
+    cursor: pointer;
+    color: green;
+  }
